@@ -99,7 +99,7 @@ form > div > input::placeholder {
 	color: var(--light-gray);
 }
 form > div > input:focus {
-	border: solid 0.1rem var(--han-purple);
+	outline: solid 0.1rem var(--han-purple);
 	transition: all 0.2s ease;
 	color: var(--han-purple);
 }

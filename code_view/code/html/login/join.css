@@ -88,7 +88,7 @@ form > .input_box > input::placeholder {
 }
 
 form > .input_box > input:focus {
-	border: 0.1rem solid var(--han-purple);
+	outline: 0.1rem solid var(--han-purple);
 }
 
 .container > .form_box > form > button {
@@ -139,11 +139,11 @@ form > .input_box > .email_box > select {
 }
 
 form > .input_box > .email_box > input:focus {
-	border: 0.1rem solid var(--han-purple);
+	outline: 0.1rem solid var(--han-purple);
 }
 
 form > .input_box > .email_box > select:focus {
-	border: 0.1rem solid var(--han-purple);
+	outline: 0.1rem solid var(--han-purple);
 }
 
 form > .input_box > .male_box {
@@ -191,5 +191,5 @@ form > .input_box > .male_box > div > input:checked {
 }
 
 .color_box > select:focus {
-	border: 0.1rem solid var(--han-purple);
+	outline: 0.1rem solid var(--han-purple);
 }
