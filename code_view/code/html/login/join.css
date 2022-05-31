@@ -6,7 +6,7 @@
 	--eerie-black: #1c1d21;
 	--light-gray: #d3d4d9;
 	--black-coral: #676b79;
-	--han-purple: #33f;
+	--han-purple: #3333ff;
 	--ghost-white: #fbfbff;
 	--lavender-web: #e7e7ff;
 	--white: #fff;
@@ -192,4 +192,15 @@ form > .input_box > .male_box > div > input:checked {
 
 .color_box > select:focus {
 	outline: 0.1rem solid var(--han-purple);
+}
+
+form > div .check_text {
+	margin-top: 0.5rem;
+	width: 100%;
+	height: 2rem;
+}
+
+form div > span {
+	font-size: 1.5rem;
+	color: var(--han-purple);
 }
