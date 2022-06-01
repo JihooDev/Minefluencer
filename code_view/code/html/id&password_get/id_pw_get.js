@@ -1,25 +1,9 @@
-$('#id_btn').click(function () {
-	$.ajax({
-		type: 'Get',
-		url: 'idGet.html',
-		success: function (result) {
-			$('.resultBox').html(result);
-		},
-		error: function () {
-			alert('죄송합니다');
-		},
-	});
-});
+$('.btn_text > p').click(function () {
+	let tabId = $(this).attr('data-tab');
 
-$('#pw_btn').click(function () {
-	$.ajax({
-		type: 'Get',
-		url: 'pwGet.html',
-		success: function (resultData) {
-			$('.resultBox').html(resultData);
-		},
-		error: function () {
-			alert('죄송합니다');
-		},
-	});
+	$('.btn_text > p').removeClass('active');
+	$('.content').removeClass('active');
+
+	$(this).addClass('active');
+	$('#' + tabId).addClass('active');
 });
