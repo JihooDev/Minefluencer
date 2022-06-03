@@ -1,8 +1,9 @@
 let regEmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
 let regExpId = /^(?=.*[a-zA-Z])((?=.*\d)|(?=.*\W)).{6,20}$/;
+let regId = /^[a-z]+[a-z0-9]{5,19}$/g;
 
 $('#id').keyup(function () {
-	if (regEmail.test($('#id').val())) {
+	if (regExpId.test($('#id').val())) {
 		$('#id_check').html('아이디 형식에 일치합니다.');
 	} else {
 		$('#id_check').html('');
@@ -50,4 +51,9 @@ $('#birthday').keyup(function () {
 	} else {
 		$('#birthd_check').html('');
 	}
+});
+
+$('#submit_btn').click(function () {
+	let email = $('#email').val() + '@' + $('#com > option').attr('value');
+	console.log(email);
 });
