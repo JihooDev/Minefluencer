@@ -53,7 +53,6 @@ $('#birthday').keyup(function () {
 	}
 });
 
-$('#submit_btn').click(function () {
-	let email = $('#email').val() + '@' + $('#com > option').attr('value');
-	console.log(email);
+$('#submit_btn').click(function (e) {
+	let email = $('#email').val() + '@' + $('#com > option:selected').attr('value');
 });

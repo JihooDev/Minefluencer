@@ -157,4 +157,11 @@ form > button {
 	outline: none;
 	font-weight: bold;
 	cursor: pointer;
+	transition: all 0.3s ease-in-out;
 }
+
+form > #submit_btn:hover {
+	background-color: #0000ba;
+}
+
+/* ** ID & PW SUC */
